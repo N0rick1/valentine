@@ -1684,32 +1684,20 @@ button:hover {
   animation-play-state: paused !important;
 } 
 /* ========================= */
-/* FIX DEFINITIVO CARTA */
+/* FIX REAL PARA ESTE TEMPLATE */
 /* ========================= */
 
-.wrapper {
-  position: relative !important;
-  z-index: 9999 !important;
-}
-
 .letter {
-  position: absolute !important;
-  z-index: 10000 !important;
-  max-height: 350px !important;
-  overflow-y: auto !important;
-  padding: 20px !important;
-  box-sizing: border-box;
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
 }
 
-.letter p {
-  font-size: 16px !important;
-  line-height: 1.6 !important;
-  word-break: break-word !important;
-  text-align: center;
+.wrapper.open .letter {
+  transform: translateY(-120px) !important;
 }
 
-.flowers {
-  position: relative !important;
-  z-index: 1 !important;
+.envelope {
+  overflow: visible !important;
 }
 
