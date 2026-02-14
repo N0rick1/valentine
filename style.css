@@ -1683,31 +1683,33 @@ button:hover {
   -webkit-animation-play-state: paused !important;
   animation-play-state: paused !important;
 } 
-/* =============================== */
-/* FIX PARA QUE LA CARTA SE VEA */
-/* =============================== */
+/* ========================= */
+/* FIX DEFINITIVO CARTA */
+/* ========================= */
 
 .wrapper {
-  position: relative;
-  z-index: 50 !important;
+  position: relative !important;
+  z-index: 9999 !important;
 }
 
 .letter {
-  position: relative !important;
-  z-index: 100 !important;
-  max-height: 300px !important;
+  position: absolute !important;
+  z-index: 10000 !important;
+  max-height: 350px !important;
   overflow-y: auto !important;
   padding: 20px !important;
+  box-sizing: border-box;
 }
 
 .letter p {
-  font-size: 15px !important;
+  font-size: 16px !important;
   line-height: 1.6 !important;
   word-break: break-word !important;
   text-align: center;
 }
 
 .flowers {
-  position: relative;
+  position: relative !important;
   z-index: 1 !important;
 }
+
