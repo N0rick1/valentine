@@ -1684,20 +1684,32 @@ button:hover {
   animation-play-state: paused !important;
 } 
 /* ========================= */
-/* FIX REAL PARA ESTE TEMPLATE */
+/* SOLUCIÓN DEFINITIVA */
 /* ========================= */
 
-.letter {
-  height: auto !important;
-  max-height: none !important;
+.wrapper {
   overflow: visible !important;
-}
-
-.wrapper.open .letter {
-  transform: translateY(-120px) !important;
 }
 
 .envelope {
   overflow: visible !important;
 }
+
+.letter {
+  position: absolute !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 320px !important;
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+  z-index: 99999 !important;
+}
+
+/* Cuando se abre */
+.wrapper.open .letter {
+  top: -180px !important;
+}
+
+
 
