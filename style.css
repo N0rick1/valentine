@@ -1683,3 +1683,31 @@ button:hover {
   -webkit-animation-play-state: paused !important;
   animation-play-state: paused !important;
 } 
+/* =============================== */
+/* FIX PARA QUE LA CARTA SE VEA */
+/* =============================== */
+
+.wrapper {
+  position: relative;
+  z-index: 50 !important;
+}
+
+.letter {
+  position: relative !important;
+  z-index: 100 !important;
+  max-height: 300px !important;
+  overflow-y: auto !important;
+  padding: 20px !important;
+}
+
+.letter p {
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  word-break: break-word !important;
+  text-align: center;
+}
+
+.flowers {
+  position: relative;
+  z-index: 1 !important;
+}
